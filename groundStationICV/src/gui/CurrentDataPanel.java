@@ -197,7 +197,7 @@ public class CurrentDataPanel extends JPanel {
         jl_temp.setFont(BIGFONT);
         
         tcchart = new LineChart("Thermocouples","Time [s]","Temperature [°C]");
-        cjchart = new LineChart("Coldjunctions","Time [s]","Temperature [°C]");
+        cjchart = new LineChart("Cold Junctions","Time [s]","Temperature [°C]");
         
         JLabel jl_therm = new JLabel("Thermopile:");
         jl_therm.setFont(BIGFONT);
@@ -205,7 +205,7 @@ public class CurrentDataPanel extends JPanel {
         jl_p.setFont(BIGFONT);
         
         tpchart = new LineChart("Thermopile","Time [s]","Temperature [°C]");
-        pschart = new LineChart("Pressuresensors","Time [s]","Pressure [mbar]");
+        pschart = new LineChart("Pressure Sensors","Time [s]","Pressure [mbar]");
         
         JLabel jl_pos = new JLabel("Attitude:");
         jl_pos.setFont(BIGFONT);
@@ -213,7 +213,7 @@ public class CurrentDataPanel extends JPanel {
         jl_bat.setFont(BIGFONT);
         
         imuqchart = new LineChart("IMU","Time [s]","Quaternions");
-        imurchart = new LineChart("IMU","Time [s]","angular rate [deg/s]");
+        imurchart = new LineChart("IMU","Time [s]","Angular Rate [deg/s]");
         batchart = new LineChart("Battery Voltage","Time [s]","Voltage [V]");
         
         GroupLayout gl = new GroupLayout(this);
