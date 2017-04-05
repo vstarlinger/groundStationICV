@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                        http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.aerospaceresearch</groupId>
+    <!-- Project Name -->
+    <artifactId>MIRKA2RXGroundStation</artifactId>
+    <!-- Version Number -->
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- JDK Version -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <!-- Begining of project dependency declaration -->
+    <!--######################################################################## 
+    Include dependencies required by new features inside this block.
+
+    Format:
+        <dependency>
+            <groupId>group.id.of.package</groupId>
+            <artifactId>artifact-name</artifactId>
+            <version>x.x</version>
+        </dependency>
+    #########################################################################-->
+    <dependencies>      
+        <!-- Maven Libraries -->  
+        <dependency>
+          <groupId>org.apache.maven</groupId>
+          <artifactId>maven-embedder</artifactId>
+          <version>2.0</version>
+          <exclusions>
+            <exclusion>
+              <groupId>org.apache.maven</groupId>
+              <artifactId>maven-core</artifactId>
+            </exclusion>
+          </exclusions>
+        </dependency>
+        <!-- Apache Math module -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6</version>
+        </dependency>
+        <!-- Hamcrest -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.3</version>
+        </dependency>
+        <!-- JCommon -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jcommon</artifactId>
+            <version>1.0.23</version>
+        </dependency>
+        <!-- JFreeChart -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.0.19</version>
+        </dependency>
+        <!-- JFreeSVG -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreesvg</artifactId>
+            <version>3.2</version>
+        </dependency>
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <!-- Orson Charts -->
+        <dependency>
+            <groupId>com.object-refinery</groupId>
+            <artifactId>orsoncharts</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <!-- Orson PDFs -->
+        <dependency>
+            <groupId>com.orsonpdf</groupId>
+            <artifactId>orsonpdf</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <!-- Servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <!-- 2D SWT Graphics -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>swtgraphics2d</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!-- Sun Mail -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.5.0</version>
+            <type>jar</type>
+        </dependency>
+        <!-- Serial Communication -->
+        <dependency>
+            <groupId>org.scream3r</groupId>
+            <artifactId>jssc</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+    </dependencies>
+    <!-- End of project dependency declaration -->
+    
+</project>
